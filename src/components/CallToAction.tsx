@@ -2,17 +2,43 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Calendar, Clock, Zap } from "lucide-react";
 import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const CallToAction = () => {
   const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would integrate with Calendly or your booking system
-    console.log("Demo booking requested for:", email);
-    // For now, just show an alert
-    alert("Thank you! We'll contact you within 24 hours to schedule a demo.");
-    setEmail("");
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase
+        .from('demo_requests')
+        .insert([{ email }]);
+
+      if (error) {
+        throw error;
+      }
+
+      toast({
+        title: "Demo request submitted!",
+        description: "We'll contact you within 24 hours to schedule your demo.",
+      });
+      
+      setEmail("");
+    } catch (error) {
+      console.error('Error submitting demo request:', error);
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const benefits = [
@@ -76,9 +102,10 @@ const CallToAction = () => {
             <Button 
               type="submit"
               size="lg" 
+              disabled={isSubmitting}
               className="w-full text-lg py-6 shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
             >
-              Schedule Your Free Demo
+              {isSubmitting ? "Submitting..." : "Schedule Your Free Demo"}
             </Button>
             
             <p className="text-sm text-muted-foreground text-center mt-4">

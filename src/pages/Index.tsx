@@ -6,6 +6,7 @@ import Filosofie from "@/components/Filosofie";
 import Team from "@/components/Team";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
         <CallToAction />
       </main>
       <Footer />
+      <Toaster />
     </div>
   );
 };
