@@ -25,11 +25,11 @@ const Team = () => {
       <div className="container mx-auto max-w-4xl px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Team & Missie
+            Team & Mission
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Wij zijn Lumora. Een jong, gedreven team dat gelooft dat lokale bedrijven 
-            dezelfde technologische voorsprong verdienen als grote corporates.
+            We are Lumora. A young, driven team that believes local businesses 
+            deserve the same technological advantage as large corporations.
           </p>
         </div>
         
@@ -54,11 +54,11 @@ const Team = () => {
         
         <div className="bg-primary/5 p-8 md:p-12 rounded-2xl mb-12 text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-            Onze Missie
+            Our Mission
           </h3>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Onze missie is om lokale bedrijven te helpen groeien door hen een nieuwe 
-            standaard in klantcontact en leadgeneratie te geven.
+            Our mission is to help local businesses grow by giving them a new 
+            standard in customer contact and lead generation.
           </p>
         </div>
         
@@ -69,7 +69,7 @@ const Team = () => {
             onClick={() => scrollToSection('cta')}
             className="shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
           >
-            Ontmoet ons team in een demo
+            Meet our team in a demo
           </Button>
         </div>
       </div>

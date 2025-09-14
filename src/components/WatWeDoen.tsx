@@ -10,23 +10,23 @@ const WatWeDoen = () => {
   };
 
   const features = [
-    "AI-chatbot voor websites & social media",
-    "Neemt klantenservice over door FAQ's en supportvragen direct te beantwoorden",
-    "Boekt afspraken en verzamelt contactgegevens automatisch",
-    "Stuurt warme leads direct door naar het team",
-    "Zorgt dat bedrijven nooit meer kansen missen, ook buiten openingstijden"
+    "AI chatbot for websites & social media",
+    "Handles customer service by answering FAQs and support questions instantly",
+    "Books appointments and collects contact information automatically", 
+    "Sends warm leads directly to your team",
+    "Ensures businesses never miss opportunities, even after hours"
   ];
 
   return (
-    <section id="wat-we-doen" className="section-spacing section-gradient">
+    <section id="what-we-do" className="section-spacing section-gradient">
       <div className="container mx-auto max-w-4xl px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Wat We Doen
+            What We Do
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Lumora automatiseert jullie klantcontact en leadgeneratie, zodat jullie bedrijf 
-            24/7 bereikbaar is en nooit meer kansen mist.
+            Lumora automates your customer contact and lead generation, so your business 
+            is reachable 24/7 and never misses opportunities.
           </p>
         </div>
         
@@ -51,7 +51,7 @@ const WatWeDoen = () => {
             onClick={() => scrollToSection('cta')}
             className="shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
           >
-            Laat ons dit voor jou demonstreren
+            Let us demonstrate this for you
           </Button>
         </div>
       </div>

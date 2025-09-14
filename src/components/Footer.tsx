@@ -9,7 +9,7 @@ const Footer = () => {
               Lumora
             </div>
             <p className="text-secondary-foreground/80">
-              Automatiseer je klantcontact en mis nooit meer een lead.
+              Automate your customer contact and never miss a lead again.
             </p>
           </div>
           
@@ -28,13 +28,13 @@ const Footer = () => {
           
           {/* Social Links */}
           <div>
-            <h3 className="font-bold mb-4">Volg Ons</h3>
+            <h3 className="font-bold mb-4">Follow Us</h3>
             <div className="space-y-2">
               <p className="text-secondary-foreground/80">
-                LinkedIn (binnenkort)
+                LinkedIn (coming soon)
               </p>
               <p className="text-secondary-foreground/80">
-                Twitter (binnenkort)
+                Twitter (coming soon)
               </p>
             </div>
           </div>
@@ -42,7 +42,7 @@ const Footer = () => {
         
         <div className="border-t border-secondary-foreground/20 pt-8 text-center">
           <p className="text-secondary-foreground/80">
-            © 2024 Lumora. Alle rechten voorbehouden.
+            © 2024 Lumora. All rights reserved.
           </p>
         </div>
       </div>

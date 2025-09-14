@@ -11,22 +11,22 @@ const CallToAction = () => {
     // Here you would integrate with Calendly or your booking system
     console.log("Demo booking requested for:", email);
     // For now, just show an alert
-    alert("Bedankt! We nemen binnen 24 uur contact met je op om een demo in te plannen.");
+    alert("Thank you! We'll contact you within 24 hours to schedule a demo.");
     setEmail("");
   };
 
   const benefits = [
     {
       icon: <Clock className="w-6 h-6" />,
-      text: "15 minuten gratis demo"
+      text: "15-minute free demo"
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      text: "Direct zien hoe het werkt"
+      text: "See how it works instantly"
     },
     {
       icon: <Calendar className="w-6 h-6" />,
-      text: "Geen verplichtingen"
+      text: "No obligations"
     }
   ];
 
@@ -35,12 +35,12 @@ const CallToAction = () => {
       <div className="container mx-auto max-w-4xl px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Laat ons zien hoe dit voor{" "}
-            <span className="text-primary">jouw bedrijf</span> werkt
+            Let us show how this works for{" "}
+            <span className="text-primary">your business</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Zie in 15 minuten hoe Lumora jouw bedrijf kan helpen meer leads te vangen 
-            en betere klantservice te bieden.
+            See in 15 minutes how Lumora can help your business capture more leads 
+            and provide better customer service.
           </p>
         </div>
         
@@ -65,7 +65,7 @@ const CallToAction = () => {
             <div className="mb-6">
               <Input
                 type="email"
-                placeholder="Jouw zakelijke e-mailadres"
+                placeholder="Your business email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -78,11 +78,11 @@ const CallToAction = () => {
               size="lg" 
               className="w-full text-lg py-6 shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
             >
-              Plan je Gratis Demo
+              Schedule Your Free Demo
             </Button>
             
             <p className="text-sm text-muted-foreground text-center mt-4">
-              We nemen binnen 24 uur contact met je op
+              We'll contact you within 24 hours
             </p>
           </form>
         </div>

@@ -19,16 +19,16 @@ const Header = () => {
         {/* Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <button 
-            onClick={() => scrollToSection('wat-we-doen')}
+            onClick={() => scrollToSection('what-we-do')}
             className="text-foreground hover:text-primary transition-colors"
           >
-            Wat We Doen
+            What We Do
           </button>
           <button 
-            onClick={() => scrollToSection('filosofie')}
+            onClick={() => scrollToSection('philosophy')}
             className="text-foreground hover:text-primary transition-colors"
           >
-            Filosofie
+            Philosophy
           </button>
           <button 
             onClick={() => scrollToSection('team')}
@@ -40,7 +40,7 @@ const Header = () => {
             onClick={() => scrollToSection('cta')}
             className="text-foreground hover:text-primary transition-colors"
           >
-            Boek een Call
+            Book a Call
           </button>
         </nav>
         
@@ -51,7 +51,7 @@ const Header = () => {
           onClick={() => scrollToSection('cta')}
           className="shadow-glow hover:shadow-glow transition-all duration-300"
         >
-          Boek een Gratis Demo
+          Book Free Demo
         </Button>
       </div>
     </header>

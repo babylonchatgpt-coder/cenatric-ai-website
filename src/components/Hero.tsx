@@ -19,8 +19,8 @@ const Hero = () => {
         
         {/* Subheadline */}
         <p className="text-xl md:text-2xl mb-12 text-white/90 leading-relaxed max-w-3xl mx-auto">
-          Lumora helpt lokale bedrijven leads te vangen, klanten direct te helpen 
-          en afspraken te boeken — 24/7, zonder extra personeel.
+          Lumora helps local businesses capture leads, assist customers instantly, 
+          and book appointments — 24/7, without additional staff.
         </p>
         
         {/* CTA Button */}
@@ -30,7 +30,7 @@ const Hero = () => {
           onClick={() => scrollToSection('cta')}
           className="text-lg px-8 py-6 shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
         >
-          Boek je Gratis 15-minuten Demo
+          Book Your Free 15-Minute Demo
         </Button>
       </div>
     </section>
