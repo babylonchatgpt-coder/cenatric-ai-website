@@ -25,7 +25,7 @@ const WatWeDoen = () => {
             What We Do
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Lumora automates your customer contact and lead generation, so your business 
+            Lunara automates your customer contact and lead generation, so your business 
             is reachable 24/7 and never misses opportunities.
           </p>
         </div>

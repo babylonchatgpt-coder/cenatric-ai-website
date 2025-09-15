@@ -19,7 +19,7 @@ const Hero = () => {
         
         {/* Subheadline */}
         <p className="text-xl md:text-2xl mb-12 text-white/90 leading-relaxed max-w-3xl mx-auto">
-          Lumora helps local businesses capture leads, assist customers instantly, 
+          Lunara helps local businesses capture leads, assist customers instantly, 
           and book appointments — 24/7, without additional staff.
         </p>
         
