@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Zap } from "lucide-react";
-import { useState } from "react";
-import AppointmentBooking from "./AppointmentBooking";
 
 const CallToAction = () => {
-  const [showBookingForm, setShowBookingForm] = useState(false);
+  const openCalendly = () => {
+    window.open('https://calendly.com/babylon-chatgpt/demo-call', '_blank');
+  };
 
   const benefits = [
     {
@@ -52,23 +52,19 @@ const CallToAction = () => {
         </div>
         
         <div className="bg-card p-8 md:p-12 rounded-2xl shadow-medium">
-          {showBookingForm ? (
-            <AppointmentBooking />
-          ) : (
-            <div className="max-w-md mx-auto text-center">
-              <Button 
-                onClick={() => setShowBookingForm(true)}
-                size="lg" 
-                className="w-full text-lg py-6 shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
-              >
-                Book Your Free Demo Now
-              </Button>
-              
-              <p className="text-sm text-muted-foreground mt-4">
-                Choose your preferred date and time
-              </p>
-            </div>
-          )}
+          <div className="max-w-md mx-auto text-center">
+            <Button 
+              onClick={openCalendly}
+              size="lg" 
+              className="w-full text-lg py-6 shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
+            >
+              Book Your Free Demo Now
+            </Button>
+            
+            <p className="text-sm text-muted-foreground mt-4">
+              Choose your preferred date and time on Calendly
+            </p>
+          </div>
         </div>
       </div>
     </section>
