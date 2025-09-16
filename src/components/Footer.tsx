@@ -41,6 +41,14 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-secondary-foreground/20 pt-8 text-center">
+          <p className="text-secondary-foreground/80 mb-2">
+            <a 
+              href="/privacy-policy" 
+              className="hover:text-primary transition-colors mr-4"
+            >
+              Privacy Policy
+            </a>
+          </p>
           <p className="text-secondary-foreground/80">
             © 2024 Lunara. All rights reserved.
           </p>
