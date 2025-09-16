@@ -8,6 +8,10 @@ const Header = () => {
     }
   };
 
+  const openCalendly = () => {
+    window.open('https://calendly.com/babylon-chatgpt/demo-call', '_blank');
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
@@ -37,7 +41,7 @@ const Header = () => {
             Team
           </button>
           <button 
-            onClick={() => scrollToSection('cta')}
+            onClick={openCalendly}
             className="text-foreground hover:text-primary transition-colors"
           >
             Book a Call
@@ -48,7 +52,7 @@ const Header = () => {
         <Button 
           variant="default" 
           size="default"
-          onClick={() => scrollToSection('cta')}
+          onClick={openCalendly}
           className="shadow-glow hover:shadow-glow transition-all duration-300"
         >
           Book Free Demo

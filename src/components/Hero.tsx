@@ -1,11 +1,8 @@
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const openCalendly = () => {
+    window.open('https://calendly.com/babylon-chatgpt/demo-call', '_blank');
   };
 
   return (
@@ -27,7 +24,7 @@ const Hero = () => {
         <Button 
           size="lg" 
           variant="secondary"
-          onClick={() => scrollToSection('cta')}
+          onClick={openCalendly}
           className="text-lg px-8 py-6 shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
         >
           Book Your Free 15-Minute Demo
