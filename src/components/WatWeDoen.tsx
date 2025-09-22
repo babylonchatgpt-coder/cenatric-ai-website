@@ -10,7 +10,7 @@ const WatWeDoen = () => {
   };
 
   const features = [
-    "AI chatbot for websites & social media",
+    "It's an assistant for websites & social media",
     "Handles customer service by answering FAQs and support questions instantly",
     "Books appointments and collects contact information automatically", 
     "Sends warm leads directly to your team",
