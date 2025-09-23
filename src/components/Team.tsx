@@ -2,11 +2,8 @@ import { Button } from "@/components/ui/button";
 import { User } from "lucide-react";
 
 const Team = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const openCalendly = () => {
+    window.open('https://calendly.com/babylon-chatgpt/demo-call', '_blank');
   };
 
   const teamMembers = [
@@ -66,7 +63,7 @@ const Team = () => {
           <Button 
             size="lg" 
             variant="default"
-            onClick={() => scrollToSection('cta')}
+            onClick={openCalendly}
             className="shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
           >
             Meet our team in a demo
