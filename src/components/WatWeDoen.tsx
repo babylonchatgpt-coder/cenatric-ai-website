@@ -2,11 +2,8 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 
 const WatWeDoen = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const openCalendly = () => {
+    window.open('https://calendly.com/babylon-chatgpt/demo-call', '_blank');
   };
 
   const features = [
@@ -48,7 +45,7 @@ const WatWeDoen = () => {
           <Button 
             size="lg" 
             variant="default"
-            onClick={() => scrollToSection('cta')}
+            onClick={openCalendly}
             className="shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
           >
             Let us demonstrate this for you

@@ -1,11 +1,8 @@
 import { Button } from "@/components/ui/button";
 
 const Filosofie = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const openCalendly = () => {
+    window.open('https://calendly.com/babylon-chatgpt/demo-call', '_blank');
   };
 
   return (
@@ -33,7 +30,7 @@ const Filosofie = () => {
           <Button 
             size="lg" 
             variant="default"
-            onClick={() => scrollToSection('cta')}
+            onClick={openCalendly}
             className="shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
           >
             See how this works for your business
