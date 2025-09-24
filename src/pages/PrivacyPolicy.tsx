@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">1. Algemene Informatie</h2>
             <p className="text-muted-foreground">
-              Lunara ("wij", "ons", "onze") respecteert uw privacy en is toegewijd aan het beschermen van uw persoonlijke gegevens. 
+              Cenatric ("wij", "ons", "onze") respecteert uw privacy en is toegewijd aan het beschermen van uw persoonlijke gegevens. 
               Dit privacybeleid legt uit hoe wij uw informatie verzamelen, gebruiken en beschermen wanneer u onze website bezoekt 
               of gebruik maakt van onze diensten.
             </p>
@@ -86,7 +86,7 @@ const PrivacyPolicy = () => {
               Voor vragen over dit privacybeleid kunt u contact met ons opnemen via:
             </p>
             <p className="text-muted-foreground mt-2">
-              E-mail: <a href="mailto:info@lunara.com" className="text-primary hover:underline">info@lunara.com</a>
+              E-mail: <a href="mailto:info@cenatric.com" className="text-primary hover:underline">info@cenatric.com</a>
             </p>
           </section>
 

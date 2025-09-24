@@ -30,7 +30,7 @@ const CallToAction = () => {
             <span className="text-primary">your business</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            See in 15 minutes how Lunara can help your business capture more leads 
+            See in 15 minutes how Cenatric can help your business capture more leads 
             and provide better customer service.
           </p>
         </div>

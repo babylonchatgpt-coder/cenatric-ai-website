@@ -16,7 +16,7 @@ const Hero = () => {
         
         {/* Subheadline */}
         <p className="text-xl md:text-2xl mb-12 text-white/90 leading-relaxed max-w-3xl mx-auto">
-          Lunara helps local businesses capture leads, assist customers instantly, 
+          Cenatric helps local businesses capture leads, assist customers instantly, 
           and book appointments — 24/7, without additional staff.
         </p>
         

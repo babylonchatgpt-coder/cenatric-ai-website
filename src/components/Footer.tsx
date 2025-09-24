@@ -6,7 +6,7 @@ const Footer = () => {
           {/* Logo & Company */}
           <div>
             <div className="text-2xl font-bold mb-4">
-              Lunara
+              Cenatric
             </div>
             <p className="text-secondary-foreground/80">
               Automate your customer contact and never miss a lead again.
@@ -18,10 +18,10 @@ const Footer = () => {
             <h3 className="font-bold mb-4">Contact</h3>
             <p className="text-secondary-foreground/80">
               <a 
-                href="mailto:info@lunara.com" 
+                href="mailto:info@cenatric.com" 
                 className="hover:text-primary transition-colors"
               >
-                info@lunara.com
+                info@cenatric.com
               </a>
             </p>
           </div>
@@ -50,7 +50,7 @@ const Footer = () => {
             </a>
           </p>
           <p className="text-secondary-foreground/80">
-            © 2024 Lunara. All rights reserved.
+            © 2024 Cenatric. All rights reserved.
           </p>
         </div>
       </div>

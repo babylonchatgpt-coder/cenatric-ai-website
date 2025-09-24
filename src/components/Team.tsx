@@ -25,7 +25,7 @@ const Team = () => {
             Team & Mission
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We are Lunara. A young, driven team that believes local businesses 
+            We are Cenatric. A young, driven team that believes local businesses 
             deserve the same technological advantage as large corporations.
           </p>
         </div>
