@@ -10,94 +10,94 @@ const PrivacyPolicy = () => {
         
         <div className="prose max-w-none space-y-6">
           <section>
-            <h2 className="text-2xl font-semibold mb-4">1. Algemene Informatie</h2>
+            <h2 className="text-2xl font-semibold mb-4">1. General Information</h2>
             <p className="text-muted-foreground">
-              Cenatric ("wij", "ons", "onze") respecteert uw privacy en is toegewijd aan het beschermen van uw persoonlijke gegevens. 
-              Dit privacybeleid legt uit hoe wij uw informatie verzamelen, gebruiken en beschermen wanneer u onze website bezoekt 
-              of gebruik maakt van onze diensten.
+              Cenatric ("we", "us", "our") respects your privacy and is committed to protecting your personal data. 
+              This privacy policy explains how we collect, use and protect your information when you visit our website 
+              or use our services.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">2. Welke Gegevens Verzamelen Wij</h2>
-            <p className="text-muted-foreground mb-3">Wij kunnen de volgende types persoonlijke gegevens verzamelen:</p>
+            <h2 className="text-2xl font-semibold mb-4">2. What Data We Collect</h2>
+            <p className="text-muted-foreground mb-3">We may collect the following types of personal data:</p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
-              <li>Contactgegevens (naam, e-mailadres, telefoonnummer)</li>
-              <li>Bedrijfsinformatie (bedrijfsnaam, functie, branche)</li>
-              <li>Technische gegevens (IP-adres, browsertype, apparaatinformatie)</li>
-              <li>Gebruiksgegevens (hoe u onze website gebruikt)</li>
+              <li>Contact information (name, email address, phone number)</li>
+              <li>Company information (company name, job title, industry)</li>
+              <li>Technical data (IP address, browser type, device information)</li>
+              <li>Usage data (how you use our website)</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">3. Hoe Wij Uw Gegevens Gebruiken</h2>
-            <p className="text-muted-foreground mb-3">Wij gebruiken uw persoonlijke gegevens voor:</p>
+            <h2 className="text-2xl font-semibold mb-4">3. How We Use Your Data</h2>
+            <p className="text-muted-foreground mb-3">We use your personal data to:</p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
-              <li>Het leveren van onze AI-chatbot diensten</li>
-              <li>Communicatie over onze producten en diensten</li>
-              <li>Het verbeteren van onze website en services</li>
-              <li>Het naleven van wettelijke verplichtingen</li>
+              <li>Provide our AI chatbot services</li>
+              <li>Communicate about our products and services</li>
+              <li>Improve our website and services</li>
+              <li>Comply with legal obligations</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">4. Gegevens Delen</h2>
+            <h2 className="text-2xl font-semibold mb-4">4. Data Sharing</h2>
             <p className="text-muted-foreground">
-              Wij verkopen, verhuren of delen uw persoonlijke gegevens niet met derden, behalve:
+              We do not sell, rent or share your personal data with third parties, except:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2 mt-3">
-              <li>Met uw expliciete toestemming</li>
-              <li>Om te voldoen aan wettelijke verplichtingen</li>
-              <li>Met vertrouwde serviceproviders die ons helpen onze diensten te leveren</li>
+              <li>With your explicit consent</li>
+              <li>To comply with legal obligations</li>
+              <li>With trusted service providers who help us deliver our services</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">5. Beveiliging van Gegevens</h2>
+            <h2 className="text-2xl font-semibold mb-4">5. Data Security</h2>
             <p className="text-muted-foreground">
-              Wij implementeren passende technische en organisatorische maatregelen om uw persoonlijke gegevens 
-              te beschermen tegen ongeautoriseerde toegang, wijziging, openbaarmaking of vernietiging.
+              We implement appropriate technical and organizational measures to protect your personal data 
+              against unauthorized access, modification, disclosure or destruction.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">6. Uw Rechten</h2>
-            <p className="text-muted-foreground mb-3">Onder de AVG heeft u het recht om:</p>
+            <h2 className="text-2xl font-semibold mb-4">6. Your Rights</h2>
+            <p className="text-muted-foreground mb-3">Under the GDPR, you have the right to:</p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
-              <li>Toegang te vragen tot uw persoonlijke gegevens</li>
-              <li>Correctie van onjuiste gegevens te vragen</li>
-              <li>Verwijdering van uw gegevens te vragen</li>
-              <li>Beperking van de verwerking te vragen</li>
-              <li>Bezwaar te maken tegen verwerking</li>
+              <li>Request access to your personal data</li>
+              <li>Request correction of inaccurate data</li>
+              <li>Request deletion of your data</li>
+              <li>Request restriction of processing</li>
+              <li>Object to processing</li>
             </ul>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">7. Cookies</h2>
             <p className="text-muted-foreground">
-              Onze website gebruikt cookies om uw ervaring te verbeteren en analyse uit te voeren. 
-              U kunt cookies uitschakelen via uw browserinstellingen.
+              Our website uses cookies to improve your experience and perform analytics. 
+              You can disable cookies through your browser settings.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">8. Contact</h2>
             <p className="text-muted-foreground">
-              Voor vragen over dit privacybeleid kunt u contact met ons opnemen via:
+              For questions about this privacy policy, you can contact us at:
             </p>
             <p className="text-muted-foreground mt-2">
-              E-mail: <a href="mailto:info@cenatric.com" className="text-primary hover:underline">info@cenatric.com</a>
+              Email: <a href="mailto:info@cenatric.com" className="text-primary hover:underline">info@cenatric.com</a>
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">9. Wijzigingen</h2>
+            <h2 className="text-2xl font-semibold mb-4">9. Changes</h2>
             <p className="text-muted-foreground">
-              Wij kunnen dit privacybeleid van tijd tot tijd bijwerken. Wijzigingen worden op deze pagina gepubliceerd 
-              met de datum van de laatste wijziging.
+              We may update this privacy policy from time to time. Changes will be published on this page 
+              with the date of the last update.
             </p>
             <p className="text-muted-foreground mt-4">
-              <strong>Laatste update:</strong> December 2024
+              <strong>Last updated:</strong> December 2024
             </p>
           </section>
         </div>
