@@ -3,7 +3,7 @@ import { User } from "lucide-react";
 
 const Team = () => {
   const openCalendly = () => {
-    window.open('https://calendly.com/babylon-chatgpt/demo-call', '_blank');
+    window.open('https://calendly.com/main-cenatric/30min', '_blank');
   };
 
   const teamMembers = [

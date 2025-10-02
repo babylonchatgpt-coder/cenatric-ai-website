@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   const openCalendly = () => {
-    window.open('https://calendly.com/babylon-chatgpt/demo-call', '_blank');
+    window.open('https://calendly.com/main-cenatric/30min', '_blank');
   };
 
   return (
