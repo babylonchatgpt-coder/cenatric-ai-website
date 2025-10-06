@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
+  const { t } = useLanguage();
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -26,37 +29,40 @@ const Header = () => {
             onClick={() => scrollToSection('what-we-do')}
             className="text-foreground hover:text-primary transition-colors"
           >
-            What We Do
+            {t.header.whatWeDo}
           </button>
           <button 
             onClick={() => scrollToSection('philosophy')}
             className="text-foreground hover:text-primary transition-colors"
           >
-            Philosophy
+            {t.header.philosophy}
           </button>
           <button 
             onClick={() => scrollToSection('team')}
             className="text-foreground hover:text-primary transition-colors"
           >
-            Team
+            {t.header.team}
           </button>
           <button 
             onClick={openCalendly}
             className="text-foreground hover:text-primary transition-colors"
           >
-            Book a Call
+            {t.header.bookCall}
           </button>
         </nav>
         
-        {/* CTA Button */}
-        <Button 
-          variant="default" 
-          size="default"
-          onClick={openCalendly}
-          className="shadow-glow hover:shadow-glow transition-all duration-300"
-        >
-          Book Free Demo
-        </Button>
+        {/* Language Switcher & CTA */}
+        <div className="flex items-center gap-4">
+          <LanguageSwitcher />
+          <Button 
+            variant="default" 
+            size="default"
+            onClick={openCalendly}
+            className="shadow-glow hover:shadow-glow transition-all duration-300"
+          >
+            {t.header.bookDemo}
+          </Button>
+        </div>
       </div>
     </header>
   );

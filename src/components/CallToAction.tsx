@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Zap } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const CallToAction = () => {
+  const { t } = useLanguage();
   const openCalendly = () => {
     window.open('https://calendly.com/main-cenatric/30min', '_blank');
   };
@@ -9,15 +11,12 @@ const CallToAction = () => {
   const benefits = [
     {
       icon: <Clock className="w-6 h-6" />,
-      text: "15-minute free demo"
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      text: "See how it works instantly"
     },
     {
       icon: <Calendar className="w-6 h-6" />,
-      text: "No obligations"
     }
   ];
 
@@ -26,12 +25,11 @@ const CallToAction = () => {
       <div className="container mx-auto max-w-4xl px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Let us show how this works for{" "}
-            <span className="text-primary">your business</span>
+            {t.cta.title}{" "}
+            <span className="text-primary">{t.cta.titleHighlight}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            See in 15 minutes how Cenatric can help your business capture more leads 
-            and provide better customer service.
+            {t.cta.description}
           </p>
         </div>
         
@@ -45,7 +43,7 @@ const CallToAction = () => {
                 {benefit.icon}
               </div>
               <p className="text-accent-foreground font-medium">
-                {benefit.text}
+                {t.cta.benefits[index]}
               </p>
             </div>
           ))}
@@ -58,11 +56,11 @@ const CallToAction = () => {
               size="lg" 
               className="w-full text-lg py-6 shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
             >
-              Book Your Free Demo Now
+              {t.cta.button}
             </Button>
             
             <p className="text-sm text-muted-foreground mt-4">
-              Choose your preferred date and time on Calendly
+              {t.cta.calendlyNote}
             </p>
           </div>
         </div>

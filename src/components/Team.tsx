@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { User } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Team = () => {
+  const { t } = useLanguage();
   const openCalendly = () => {
     window.open('https://calendly.com/main-cenatric/30min', '_blank');
   };
@@ -22,11 +24,10 @@ const Team = () => {
       <div className="container mx-auto max-w-4xl px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Team & Mission
+            {t.team.title}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We are Cenatric. A young, driven team that believes local businesses 
-            deserve the same technological advantage as large corporations.
+            {t.team.description}
           </p>
         </div>
         
@@ -43,7 +44,7 @@ const Team = () => {
                 {member.name}
               </h3>
               <p className="text-lg text-primary font-medium">
-                {member.role}
+                {t.team.coOwner}
               </p>
             </div>
           ))}
@@ -51,11 +52,10 @@ const Team = () => {
         
         <div className="bg-primary/5 p-8 md:p-12 rounded-2xl mb-12 text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-            Our Mission
+            {t.team.missionTitle}
           </h3>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Our mission is to help local businesses grow by giving them a new 
-            standard in customer contact and lead generation.
+            {t.team.missionDescription}
           </p>
         </div>
         
@@ -66,7 +66,7 @@ const Team = () => {
             onClick={openCalendly}
             className="shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
           >
-            Meet our team in a demo
+            {t.team.cta}
           </Button>
         </div>
       </div>

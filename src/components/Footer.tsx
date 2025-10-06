@@ -1,4 +1,7 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const Footer = () => {
+  const { t } = useLanguage();
   return (
     <footer className="bg-secondary text-secondary-foreground py-12">
       <div className="container mx-auto max-w-4xl px-6">
@@ -9,13 +12,13 @@ const Footer = () => {
               Cenatric
             </div>
             <p className="text-secondary-foreground/80">
-              Automate your customer contact and never miss a lead again.
+              {t.footer.tagline}
             </p>
           </div>
           
           {/* Contact */}
           <div>
-            <h3 className="font-bold mb-4">Contact</h3>
+            <h3 className="font-bold mb-4">{t.footer.contact}</h3>
             <p className="text-secondary-foreground/80">
               <a 
                 href="mailto:info@cenatric.com" 
@@ -28,13 +31,13 @@ const Footer = () => {
           
           {/* Social Links */}
           <div>
-            <h3 className="font-bold mb-4">Follow Us</h3>
+            <h3 className="font-bold mb-4">{t.footer.followUs}</h3>
             <div className="space-y-2">
               <p className="text-secondary-foreground/80">
-                LinkedIn (coming soon)
+                {t.footer.linkedinComing}
               </p>
               <p className="text-secondary-foreground/80">
-                Twitter (coming soon)
+                {t.footer.twitterComing}
               </p>
             </div>
           </div>
@@ -46,11 +49,11 @@ const Footer = () => {
               href="/privacy-policy" 
               className="hover:text-primary transition-colors mr-4"
             >
-              Privacy Policy
+              {t.footer.privacyPolicy}
             </a>
           </p>
           <p className="text-secondary-foreground/80">
-            © 2024 Cenatric. All rights reserved.
+            {t.footer.copyright}
           </p>
         </div>
       </div>

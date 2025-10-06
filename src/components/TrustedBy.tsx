@@ -1,4 +1,7 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const TrustedBy = () => {
+  const { t } = useLanguage();
   const companies = [
     "RestaurantPro",
     "SalonElite", 
@@ -12,7 +15,7 @@ const TrustedBy = () => {
       <div className="container mx-auto max-w-4xl px-6">
         <div className="text-center">
           <p className="text-muted-foreground mb-8 text-lg">
-            Trusted by local businesses across industries
+            {t.trustedBy.title}
           </p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {companies.map((company, index) => (
