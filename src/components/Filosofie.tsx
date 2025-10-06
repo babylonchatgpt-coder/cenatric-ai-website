@@ -21,7 +21,7 @@ const Filosofie = () => {
           </p>
           
           <p className="text-lg md:text-xl leading-relaxed text-accent-foreground mt-6">
-            <strong className="text-secondary">Automation supports, doesn't replace</strong> — your team stays focused on personal relationships, 
+            <strong className="text-secondary">Automation supports, doesn't replace</strong> your team stays focused on personal relationships, 
             while Cenatric takes away the repetitive work. This means more efficiency, fewer missed opportunities, and better customer experience.
           </p>
         </div>

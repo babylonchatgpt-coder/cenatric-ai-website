@@ -10,14 +10,14 @@ const Hero = () => {
       <div className="container mx-auto max-w-4xl text-center">
         {/* Main Headline */}
         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-          Turn visitors into customers —{" "}
+          Turn visitors into customers{" "}
           <span className="text-primary-glow">automatically</span>
         </h1>
         
         {/* Subheadline */}
         <p className="text-xl md:text-2xl mb-12 text-white/90 leading-relaxed max-w-3xl mx-auto">
           Cenatric helps local businesses capture leads, assist customers instantly, 
-          and book appointments — 24/7, without additional staff.
+          and book appointments 24/7, without additional staff.
         </p>
         
         {/* CTA Button */}
