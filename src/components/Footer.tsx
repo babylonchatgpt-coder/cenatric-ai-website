@@ -3,8 +3,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const Footer = () => {
   const { t } = useLanguage();
   return (
-    <footer className="relative bg-gradient-to-br from-background via-background to-secondary/20 border-t border-border">
-      <div className="absolute inset-0 bg-grid-white/[0.02] pointer-events-none" />
+    <footer className="relative bg-background border-t border-border">
       
       <div className="relative container mx-auto max-w-6xl px-6 py-16">
         {/* Main Content */}
