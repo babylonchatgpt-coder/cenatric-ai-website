@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Target, TrendingUp } from "lucide-react";
 
 const Filosofie = () => {
   const { t } = useLanguage();
@@ -8,32 +9,48 @@ const Filosofie = () => {
   };
 
   return (
-    <section id="philosophy" className="section-spacing bg-background">
-      <div className="container mx-auto max-w-4xl px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12">
+    <section id="philosophy" className="py-24 bg-background relative overflow-hidden">
+      {/* Background Decoration */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
+      
+      <div className="relative container mx-auto max-w-6xl px-6">
+        <div className="text-center mb-20">
+          <div className="inline-block px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-semibold mb-6">
+            Our Philosophy
+          </div>
+          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
             {t.philosophy.title}
           </h2>
         </div>
         
-        <div className="bg-accent p-8 md:p-12 rounded-2xl mb-12">
-          <p className="text-lg md:text-xl leading-relaxed text-accent-foreground">
-            <strong className="text-primary">{t.philosophy.paragraph1}</strong>
-            {t.philosophy.paragraph1Bold}
-          </p>
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="group bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-10 rounded-3xl border border-primary/20 hover-lift hover:shadow-xl">
+            <div className="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <Target className="w-7 h-7 text-primary" />
+            </div>
+            <p className="text-lg leading-relaxed text-foreground">
+              <strong className="text-primary font-semibold">{t.philosophy.paragraph1}</strong>
+              {t.philosophy.paragraph1Bold}
+            </p>
+          </div>
           
-          <p className="text-lg md:text-xl leading-relaxed text-accent-foreground mt-6">
-            <strong className="text-secondary">{t.philosophy.paragraph2}</strong>
-            {t.philosophy.paragraph2Bold}
-          </p>
+          <div className="group bg-gradient-to-br from-secondary/10 via-secondary/5 to-transparent p-10 rounded-3xl border border-secondary/20 hover-lift hover:shadow-xl">
+            <div className="w-14 h-14 rounded-xl bg-secondary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <TrendingUp className="w-7 h-7 text-secondary" />
+            </div>
+            <p className="text-lg leading-relaxed text-foreground">
+              <strong className="text-secondary font-semibold">{t.philosophy.paragraph2}</strong>
+              {t.philosophy.paragraph2Bold}
+            </p>
+          </div>
         </div>
         
         <div className="text-center">
           <Button 
             size="lg" 
-            variant="default"
+            variant="premium"
             onClick={openCalendly}
-            className="shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
           >
             {t.philosophy.cta}
           </Button>

@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Sparkles, ArrowRight } from "lucide-react";
+import heroImage from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -8,28 +10,71 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero-gradient text-white pt-32 pb-20 px-6">
-      <div className="container mx-auto max-w-4xl text-center">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 premium-gradient opacity-95" />
+      <div 
+        className="absolute inset-0 opacity-20"
+        style={{
+          backgroundImage: `url(${heroImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          mixBlendMode: 'overlay'
+        }}
+      />
+      
+      {/* Floating Elements */}
+      <div className="absolute top-20 left-10 w-32 h-32 bg-white/10 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-20 right-10 w-40 h-40 bg-primary-glow/20 rounded-full blur-3xl animate-pulse delay-700" />
+      
+      <div className="relative container mx-auto max-w-6xl px-6 pt-24 pb-16 text-center">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect text-white/90 text-sm font-medium mb-8 animate-fade-in">
+          <Sparkles className="w-4 h-4" />
+          <span>AI-Powered Customer Automation</span>
+        </div>
+        
         {/* Main Headline */}
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+        <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-white animate-fade-in">
           {t.hero.headline}{" "}
-          <span className="text-primary-glow">{t.hero.headlineHighlight}</span>
+          <span className="bg-gradient-to-r from-white to-primary-glow bg-clip-text text-transparent">
+            {t.hero.headlineHighlight}
+          </span>
         </h1>
         
         {/* Subheadline */}
-        <p className="text-xl md:text-2xl mb-12 text-white/90 leading-relaxed max-w-3xl mx-auto">
+        <p className="text-xl md:text-2xl mb-12 text-white/90 leading-relaxed max-w-3xl mx-auto animate-fade-in">
           {t.hero.subheadline}
         </p>
         
-        {/* CTA Button */}
-        <Button 
-          size="lg" 
-          variant="secondary"
-          onClick={openCalendly}
-          className="text-lg px-8 py-6 shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
-        >
-          {t.hero.cta}
-        </Button>
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
+          <Button 
+            size="lg" 
+            variant="secondary"
+            onClick={openCalendly}
+            className="group text-lg px-10 shadow-glow"
+          >
+            {t.hero.cta}
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
+        </div>
+        
+        {/* Trust Indicators */}
+        <div className="mt-16 flex flex-wrap justify-center gap-8 text-white/70 text-sm">
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            <span>No credit card required</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            <span>15-minute setup</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            <span>Cancel anytime</span>
+          </div>
+        </div>
       </div>
     </section>
   );
