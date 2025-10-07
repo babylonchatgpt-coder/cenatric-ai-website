@@ -3,58 +3,60 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const Footer = () => {
   const { t } = useLanguage();
   return (
-    <footer className="bg-secondary text-secondary-foreground py-12">
-      <div className="container mx-auto max-w-4xl px-6">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+    <footer className="relative bg-gradient-to-br from-background via-background to-secondary/20 border-t border-border">
+      <div className="absolute inset-0 bg-grid-white/[0.02] pointer-events-none" />
+      
+      <div className="relative container mx-auto max-w-6xl px-6 py-16">
+        {/* Main Content */}
+        <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Logo & Company */}
-          <div>
-            <div className="text-2xl font-bold mb-4">
+          <div className="space-y-4">
+            <div className="text-3xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
               Cenatric
             </div>
-            <p className="text-secondary-foreground/80">
+            <p className="text-muted-foreground text-sm leading-relaxed">
               {t.footer.tagline}
             </p>
           </div>
           
           {/* Contact */}
-          <div>
-            <h3 className="font-bold mb-4">{t.footer.contact}</h3>
-            <p className="text-secondary-foreground/80">
-              <a 
-                href="mailto:info@cenatric.com" 
-                className="hover:text-primary transition-colors"
-              >
-                info@cenatric.com
-              </a>
-            </p>
+          <div className="space-y-4">
+            <h3 className="font-semibold text-lg text-foreground">{t.footer.contact}</h3>
+            <a 
+              href="mailto:info@cenatric.com" 
+              className="inline-flex items-center text-muted-foreground hover:text-primary transition-colors duration-200 text-sm"
+            >
+              info@cenatric.com
+            </a>
           </div>
           
           {/* Social Links */}
-          <div>
-            <h3 className="font-bold mb-4">{t.footer.followUs}</h3>
-            <div className="space-y-2">
-              <p className="text-secondary-foreground/80">
+          <div className="space-y-4">
+            <h3 className="font-semibold text-lg text-foreground">{t.footer.followUs}</h3>
+            <div className="space-y-2 text-sm">
+              <p className="text-muted-foreground">
                 {t.footer.linkedinComing}
               </p>
-              <p className="text-secondary-foreground/80">
+              <p className="text-muted-foreground">
                 {t.footer.twitterComing}
               </p>
             </div>
           </div>
         </div>
         
-        <div className="border-t border-secondary-foreground/20 pt-8 text-center">
-          <p className="text-secondary-foreground/80 mb-2">
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-border/50">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-muted-foreground text-sm">
+              {t.footer.copyright}
+            </p>
             <a 
               href="/privacy-policy" 
-              className="hover:text-primary transition-colors mr-4"
+              className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
             >
               {t.footer.privacyPolicy}
             </a>
-          </p>
-          <p className="text-secondary-foreground/80">
-            {t.footer.copyright}
-          </p>
+          </div>
         </div>
       </div>
     </footer>
