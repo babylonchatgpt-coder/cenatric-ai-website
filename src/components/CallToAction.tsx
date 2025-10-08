@@ -64,23 +64,6 @@ const CallToAction = () => {
               <p className="text-sm text-muted-foreground">
                 {t.cta.calendlyNote}
               </p>
-              
-              <div className="mt-8 pt-8 border-t border-border/50">
-                <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-green-500 rounded-full" />
-                    <span>No credit card</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-green-500 rounded-full" />
-                    <span>100% free demo</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-green-500 rounded-full" />
-                    <span>Instant setup</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

@@ -60,21 +60,6 @@ const Hero = () => {
           </Button>
         </div>
         
-        {/* Trust Indicators */}
-        <div className="mt-16 flex flex-wrap justify-center gap-8 text-white/70 text-sm">
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            <span>No credit card required</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            <span>15-minute setup</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            <span>Cancel anytime</span>
-          </div>
-        </div>
       </div>
     </section>
   );
