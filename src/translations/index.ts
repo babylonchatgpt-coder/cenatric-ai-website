@@ -37,7 +37,7 @@ export const translations = {
       cta: "See how this works for your business",
     },
     team: {
-      title: "Team & Mission",
+      title: "Team",
       description: "We are Cenatric. A young, driven team that believes local businesses deserve the same technological advantage as large corporations.",
       coOwner: "Co-owner",
       missionTitle: "Our Mission",
@@ -104,7 +104,7 @@ export const translations = {
       cta: "Zie hoe dit werkt voor jouw bedrijf",
     },
     team: {
-      title: "Team & Missie",
+      title: "Team",
       description: "Wij zijn Cenatric. Een jong, gedreven team dat gelooft dat lokale bedrijven hetzelfde technologische voordeel verdienen als grote bedrijven.",
       coOwner: "Mede-eigenaar",
       missionTitle: "Onze Missie",
