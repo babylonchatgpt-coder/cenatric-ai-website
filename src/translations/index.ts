@@ -41,7 +41,7 @@ export const translations = {
       description: "We are Cenatric. A young, driven team that believes local businesses deserve the same technological advantage as large corporations.",
       coOwner: "Co-owner",
       missionTitle: "Our Mission",
-      missionDescription: "We're a driven team passionate about shaping the future of business through intelligent automation and real, measurable impact.",
+      missionDescription: "Our mission is to help local businesses grow by giving them a new standard in customer contact and lead generation.",
       cta: "Meet our team in a demo",
     },
     cta: {
@@ -108,7 +108,7 @@ export const translations = {
       description: "Wij zijn Cenatric. Een jong, gedreven team dat gelooft dat lokale bedrijven hetzelfde technologische voordeel verdienen als grote bedrijven.",
       coOwner: "Mede-eigenaar",
       missionTitle: "Onze Missie",
-      missionDescription: "We zijn een gedreven team gepassioneerd over het vormgeven van de toekomst van bedrijven door intelligente automatisering en echte, meetbare impact.",
+      missionDescription: "Onze missie is om lokale bedrijven te helpen groeien door hen een nieuwe standaard te geven in klantcontact en leadgeneratie.",
       cta: "Ontmoet ons team in een demo",
     },
     cta: {
