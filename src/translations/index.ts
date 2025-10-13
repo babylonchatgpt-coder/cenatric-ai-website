@@ -10,7 +10,7 @@ export const translations = {
     hero: {
       headline: "Turn visitors into customers",
       headlineHighlight: "automatically",
-      subheadline: "Cenatric helps local businesses capture leads, assist customers instantly, and book appointments 24/7, without additional staff.",
+      subheadline: "Cenatric helps businesses grow faster and operate smarter with AI systems that automate communication, capture leads, and streamline daily tasks — 24/7.",
       cta: "Book Your Free 15-Minute Demo",
     },
     trustedBy: {
@@ -18,7 +18,7 @@ export const translations = {
     },
     whatWeDo: {
       title: "What We Do",
-      description: "Cenatric automates your customer contact and lead generation, so your business is reachable 24/7 and never misses opportunities.",
+      description: "At Cenatric, we build intelligent systems that help businesses operate smarter and scale faster. Our AI solutions automate customer communication, streamline workflows, and unlock new levels of efficiency — so teams can focus on growth, not busywork.",
       features: [
         "It's an assistant for websites & social media",
         "Handles customer service by answering FAQs and support questions instantly",
@@ -77,7 +77,7 @@ export const translations = {
     hero: {
       headline: "Verander bezoekers in klanten",
       headlineHighlight: "automatisch",
-      subheadline: "Cenatric helpt lokale bedrijven om leads te verzamelen, klanten direct te helpen en afspraken te boeken 24/7, zonder extra personeel.",
+      subheadline: "Cenatric helpt bedrijven sneller te groeien en slimmer te werken met AI-systemen die communicatie automatiseren, leads verzamelen en dagelijkse taken stroomlijnen — 24/7.",
       cta: "Boek Je Gratis 15-Minuten Demo",
     },
     trustedBy: {
@@ -85,7 +85,7 @@ export const translations = {
     },
     whatWeDo: {
       title: "Wat We Doen",
-      description: "Cenatric automatiseert jouw klantcontact en leadgeneratie, zodat jouw bedrijf 24/7 bereikbaar is en geen kansen mist.",
+      description: "Bij Cenatric bouwen we intelligente systemen die bedrijven helpen slimmer te werken en sneller te schalen. Onze AI-oplossingen automatiseren klantcommunicatie, stroomlijnen workflows en ontgrendelen nieuwe niveaus van efficiëntie — zodat teams zich kunnen richten op groei, niet op routine.",
       features: [
         "Het is een assistent voor websites & sociale media",
         "Handelt klantenservice af door direct veelgestelde vragen en ondersteuningsvragen te beantwoorden",
