@@ -38,10 +38,10 @@ export const translations = {
     },
     team: {
       title: "Team",
-      description: "We are Cenatric. A young, driven team that believes local businesses deserve the same technological advantage as large corporations.",
+      description: "We're a driven team passionate about shaping the future of business through intelligent automation and real, measurable impact.",
       coOwner: "Co-owner",
       missionTitle: "Our Mission",
-      missionDescription: "Our mission is to help local businesses grow by giving them a new standard in customer contact and lead generation.",
+      missionDescription: "At Cenatric, our mission is to bridge the gap between technology and business by building AI systems that make growth effortless and operations smarter.",
       cta: "Meet our team in a demo",
     },
     cta: {
@@ -105,10 +105,10 @@ export const translations = {
     },
     team: {
       title: "Team",
-      description: "Wij zijn Cenatric. Een jong, gedreven team dat gelooft dat lokale bedrijven hetzelfde technologische voordeel verdienen als grote bedrijven.",
+      description: "We zijn een gedreven team gepassioneerd over het vormgeven van de toekomst van bedrijven door intelligente automatisering en echte, meetbare impact.",
       coOwner: "Mede-eigenaar",
       missionTitle: "Onze Missie",
-      missionDescription: "Onze missie is om lokale bedrijven te helpen groeien door hen een nieuwe standaard te geven in klantcontact en leadgeneratie.",
+      missionDescription: "Bij Cenatric is onze missie de kloof tussen technologie en bedrijven te overbruggen door AI-systemen te bouwen die groei moeiteloos en operaties slimmer maken.",
       cta: "Ontmoet ons team in een demo",
     },
     cta: {
