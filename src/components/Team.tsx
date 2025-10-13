@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { User, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const Team = () => {
   const { t } = useLanguage();
+  const { ref, isVisible } = useScrollReveal();
   const openCalendly = () => {
     window.open('https://calendly.com/main-cenatric/30min', '_blank');
   };
@@ -20,8 +22,8 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-24 soft-gradient">
-      <div className="container mx-auto max-w-6xl px-6">
+    <section id="team" className="py-24 soft-gradient" ref={ref}>
+      <div className={`container mx-auto max-w-6xl px-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="text-center mb-20">
           <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-6">
             Meet the Team

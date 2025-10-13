@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, Zap, ArrowRight } from "lucide-react";
+import { Calendar, Clock, Zap, ArrowRight, TrendingUp } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const CallToAction = () => {
   const { t } = useLanguage();
+  const { ref, isVisible } = useScrollReveal();
   const openCalendly = () => {
     window.open('https://calendly.com/main-cenatric/30min', '_blank');
   };
@@ -15,11 +17,11 @@ const CallToAction = () => {
   ];
 
   return (
-    <section id="cta" className="py-24 bg-background relative overflow-hidden">
+    <section id="cta" className="py-24 bg-background relative overflow-hidden" ref={ref}>
       {/* Background Decoration */}
       <div className="absolute inset-0 premium-gradient opacity-5" />
       
-      <div className="relative container mx-auto max-w-5xl px-6">
+      <div className={`relative container mx-auto max-w-5xl px-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
             {t.cta.title}{" "}
@@ -51,18 +53,28 @@ const CallToAction = () => {
         <div className="max-w-2xl mx-auto">
           <div className="bg-gradient-to-br from-card via-card to-primary/5 p-12 rounded-3xl shadow-premium border border-border">
             <div className="text-center">
+              {/* Urgency Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-pulse">
+                <TrendingUp className="w-4 h-4" />
+                <span>Join 50+ businesses already growing with AI</span>
+              </div>
+
               <Button 
                 onClick={openCalendly}
                 size="lg" 
                 variant="premium"
-                className="group w-full md:w-auto text-lg py-7 px-12 mb-6"
+                className="group w-full md:w-auto text-lg py-7 px-12 mb-4 shadow-glow hover:shadow-xl hover:scale-105 transition-all"
+                aria-label="Book your free demo - Limited slots available"
               >
                 {t.cta.button}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground mb-2">
                 {t.cta.calendlyNote}
+              </p>
+              <p className="text-xs text-primary font-medium">
+                ⏰ Only 3 demo slots left this week
               </p>
             </div>
           </div>

@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, MessageSquare, Calendar, Users, Zap, Clock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const WatWeDoen = () => {
   const { t } = useLanguage();
+  const { ref, isVisible } = useScrollReveal();
   const openCalendly = () => {
     window.open('https://calendly.com/main-cenatric/30min', '_blank');
   };
@@ -11,7 +13,8 @@ const WatWeDoen = () => {
   const icons = [MessageSquare, Users, Calendar, Zap, Clock];
 
   return (
-    <section id="what-we-do" className="py-24 soft-gradient">
+    <section id="what-we-do" className="py-24 soft-gradient" ref={ref}>
+      <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <div className="container mx-auto max-w-6xl px-6">
         <div className="text-center mb-20">
           <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-6">
@@ -57,6 +60,7 @@ const WatWeDoen = () => {
             {t.whatWeDo.cta}
           </Button>
         </div>
+      </div>
       </div>
     </section>
   );
