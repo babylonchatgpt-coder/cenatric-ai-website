@@ -55,7 +55,7 @@ const Hero = () => {
             size="lg" 
             variant="secondary"
             onClick={openCalendly}
-            className="group text-lg px-10 py-7 shadow-glow animate-glow-pulse hover:scale-105 transition-all"
+            className="group text-lg px-10 py-7 shadow-glow hover:scale-105 transition-all"
             aria-label="Book your free 15-minute demo"
           >
             {t.hero.cta}
