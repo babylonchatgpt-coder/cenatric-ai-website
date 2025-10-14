@@ -97,7 +97,7 @@ const PrivacyPolicy = () => {
               with the date of the last update.
             </p>
             <p className="text-muted-foreground mt-4">
-              <strong>Last updated:</strong> December 2024
+              <strong>Last updated:</strong> September 2025
             </p>
           </section>
         </div>

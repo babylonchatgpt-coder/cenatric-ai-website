@@ -63,7 +63,7 @@ export const translations = {
       linkedinComing: "LinkedIn (coming soon)",
       twitterComing: "Twitter (coming soon)",
       privacyPolicy: "Privacy Policy",
-      copyright: "© 2024 Cenatric. All rights reserved.",
+      copyright: "© 2025 Cenatric. All rights reserved.",
     },
   },
   nl: {
@@ -130,7 +130,7 @@ export const translations = {
       linkedinComing: "LinkedIn (binnenkort beschikbaar)",
       twitterComing: "Twitter (binnenkort beschikbaar)",
       privacyPolicy: "Privacybeleid",
-      copyright: "© 2024 Cenatric. Alle rechten voorbehouden.",
+      copyright: "© 2025 Cenatric. Alle rechten voorbehouden.",
     },
   },
 };
