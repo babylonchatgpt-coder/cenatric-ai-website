@@ -56,7 +56,7 @@ const CallToAction = () => {
               {/* Urgency Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-pulse">
                 <TrendingUp className="w-4 h-4" />
-                <span>Join 50+ businesses already growing with AI</span>
+                <span>Limited spots available this month</span>
               </div>
 
               <Button 
@@ -74,7 +74,7 @@ const CallToAction = () => {
                 {t.cta.calendlyNote}
               </p>
               <p className="text-xs text-primary font-medium">
-                ⏰ Only 3 demo slots left this week
+                Limited demo availability - secure your spot today
               </p>
             </div>
           </div>
