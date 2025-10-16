@@ -54,6 +54,7 @@ const Filosofie = () => {
             size="lg" 
             variant="premium"
             onClick={openCalendly}
+            className="whitespace-normal h-auto py-3 px-6 text-center leading-snug"
           >
             {t.philosophy.cta}
           </Button>
