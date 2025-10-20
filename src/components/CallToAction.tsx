@@ -64,7 +64,7 @@ const CallToAction = () => {
                 size="lg" 
                 variant="premium"
                 className="group w-full md:w-auto text-base md:text-lg py-4 px-6 md:py-7 md:px-12 mb-4 shadow-glow hover:shadow-xl hover:scale-105 transition-all whitespace-normal h-auto leading-snug"
-                aria-label="Book your free demo - Limited slots available"
+                aria-label="Book your free demo. Limited slots available"
               >
                 {t.cta.button}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -74,7 +74,7 @@ const CallToAction = () => {
                 {t.cta.calendlyNote}
               </p>
               <p className="text-xs text-primary font-medium">
-                Limited demo availability - secure your spot today
+                Limited demo availability, secure your spot today
               </p>
             </div>
           </div>
