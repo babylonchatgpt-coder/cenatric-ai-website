@@ -63,7 +63,7 @@ const CallToAction = () => {
                 onClick={openCalendly}
                 size="lg" 
                 variant="premium"
-                className="group w-full md:w-auto text-lg py-7 px-12 mb-4 shadow-glow hover:shadow-xl hover:scale-105 transition-all"
+                className="group w-full md:w-auto text-base md:text-lg py-4 px-6 md:py-7 md:px-12 mb-4 shadow-glow hover:shadow-xl hover:scale-105 transition-all whitespace-normal h-auto leading-snug"
                 aria-label="Book your free demo - Limited slots available"
               >
                 {t.cta.button}
