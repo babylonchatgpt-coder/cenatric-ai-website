@@ -65,7 +65,7 @@ const Hero = () => {
 
         {/* Urgency Element */}
         <p className="mt-6 text-white/80 text-sm animate-fade-in" style={{ animationDelay: '600ms' }}>
-          ⚡ <span className="font-semibold">Limited slots available this month</span> - Join 50+ growing businesses
+          ⚡ <span className="font-semibold">Limited slots available this month</span>
         </p>
         
       </div>
