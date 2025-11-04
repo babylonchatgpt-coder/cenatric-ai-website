@@ -86,6 +86,7 @@ const Footer = () => {
             </p>
             <Link 
               to="/privacy-policy" 
+              onClick={() => window.scrollTo(0, 0)}
               className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 font-medium"
             >
               {t.footer.privacyPolicy}
