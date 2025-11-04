@@ -1,5 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Mail, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -83,12 +84,12 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground">
               {t.footer.copyright}
             </p>
-            <a 
-              href="/privacy-policy" 
+            <Link 
+              to="/privacy-policy" 
               className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 font-medium"
             >
               {t.footer.privacyPolicy}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
